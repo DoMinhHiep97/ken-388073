@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="check()">Check</button>
+<script>
+   function check() {
+       let a=parseFloat(prompt("Nhập số thứ nhất:"));
+       let b=parseFloat(prompt("Nhập số thứ hai:"));
+       let t;
+       let l;
+       l=b;
+       t=a;
+       b=t;
+       a=l;
+       alert("số thứ nhất:"+a);
+       alert("số thứ hai:"+b);
+   }
+</script>
+</body>
+</html>

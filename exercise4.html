@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="check">
+<button type="button" onclick="test()">Click</button>
+<script>
+    function test(s) {
+        s=true;
+    let input= document.getElementById("check").value;
+    if(isNaN(input)){
+        s=false;//cai nay la neu input nhap vao khong phai la so.
+
+    }else{//neu nhap vao la so.
+       s=true;
+    }
+    alert(s);
+    }
+</script>
+</body>
+</html>

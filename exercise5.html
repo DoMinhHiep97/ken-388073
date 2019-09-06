@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="minmax()">click</button>
+
+<script>
+function minmax(){
+    let a=parseInt(prompt("NHập số thứ nhất:"));
+    let b=parseInt(prompt("nhập số thứ hai:"));
+    let c=parseInt(prompt("nhập số thứ ba:"));
+    if(a<b && a<c){
+        alert(a);
+    }else if(b<a && b<c){
+        alert(b);
+    }else {
+        alert(c);
+    }
+}
+</script>
+</body>
+</html>

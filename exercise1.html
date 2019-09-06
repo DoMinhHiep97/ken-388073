@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" oninput="square(value)" value="0">
+<h2 id="result"></h2>
+<script>
+function square(number) {
+    number=parseFloat(number);
+    document.getElementById("result").innerHTML=number*number;
+}
+</script>
+</body>
+</html>

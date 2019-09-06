@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number" id="number" placeholder="input number">
+    <button type="button" onclick="findFactorial()">Factorial</button>
+</form>
+<script>
+    function findFactorial(b) {
+        let number = parseInt(document.getElementById("number").value);
+        b=1;
+        if(number<0){
+            alert("sorry");
+        }else {
+            for(let i=1;i<number+1;i++){
+                b=b*i;
+            }
+        }
+        alert(b);
+    }
+
+</script>
+</body>
+</html>

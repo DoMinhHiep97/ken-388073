@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="number">
+<button type="button" onclick="confirm()">Confirm</button>
+<br>
+<input type="text" id="word" placeholder="findWord">
+<button type="button" onclick="findWord()">findWord</button>
+<script>
+    let x = 0;
+    let arr = [];
+
+    function confirm() {
+        arr[x] = document.getElementById("number").value;
+        x++;
+        document.getElementById("number").value = "";
+    }
+
+    console.log(arr);
+
+    function findWord() {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (document.getElementById("word").value === arr[i]) {
+                count = count + 1;
+            }
+        }
+        alert(count);
+    }
+</script>
+</body>
+</html>

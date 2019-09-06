@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="radius" placeholder="Input number">
+<button type="button" onclick="area()">Area Circle</button>
+<button type="button" onclick="circuit()">Premiter Circle</button>
+<script>
+    //let r=parseFloat(document.getElementById("radius").value);
+    const PI=3.14;
+    function area() {
+        let r=parseFloat(document.getElementById("radius").value);
+        let s;
+        s=PI*r*r;
+        alert(s);
+    }
+    function circuit() {
+        let r=parseFloat(document.getElementById("radius").value);
+        let p;
+        p=PI*2*r;
+        alert(p);
+    }
+</script>
+</body>
+</html>
